@@ -1,17 +1,87 @@
+:root {
+    --ana-renk: #14213D;
+    --vurgu-renk: #FCA311;
+    --baglanti-renk: #1D7066;
+    --zemin: #F2F4F7;
+    --metin: #1F2937;
+    --kenar: #D0D5DD;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
-    color: #1F2937;
-    background-color: #F2F4F7;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--metin);
+    background-color: var(--zemin);
 }
 
 h1, h2 {
-    color: #14213D;
+    color: var(--ana-renk);
 }
 
 a {
-    color: #1D7066;
+    color: var(--baglanti-renk);
 }
 
 a:hover {
-    color: #FCA311;
+    color: var(--vurgu-renk);
+}
+
+
+main {
+    max-width: 960px;
+    margin: 24px auto;
+    padding: 24px;
+    background-color: white;
+    border: 1px solid var(--kenar);
+    border-radius: 12px;
+}
+
+/* Tablo - kenarlıklar artık CSS'te */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--kenar);
+}
+
+th {
+    background-color: var(--ana-renk);
+    color: white;
+}
+
+tr:nth-child(odd) {
+    background-color: var(--zemin);
+}
+
+/* Form elemanları */
+input, select, textarea {
+    max-width: 400px;
+    padding: 8px 10px;
+    border: 1px solid var(--kenar);
+    border-radius: 6px;
+    font: inherit;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    width: auto;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: 2px solid var(--vurgu-renk);
+}
+
+input[type="button"] {
+    background-color: var(--vurgu-renk);
+    color: var(--ana-renk);
+    font-weight: bold;
+    cursor: pointer;
 }
