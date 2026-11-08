@@ -2,29 +2,29 @@
 <html lang="tr">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>SpaceLog | Elektronik Günlüğüm</title>
         <link rel="stylesheet" href="css/stil.css">
     </head>
     <body>
-        <a href="index.html"><img src="img/home.png" width="16" height="16" alt=""> Ana sayfa</a>
-        |
-        <a href="hakkimda.html"><img src="img/minik-yildiz.png" width="16" height="16" alt=""> Hakkımda</a>
-        |
-        <a href="gunluk.html"><img src="img/minik-yildiz.png" width="16" height="16" alt=""> Kişisel günlük</a>
-        |
-        <a href="uydu.html"><img src="img/minik-uydu.png" width="16" height="16" alt=""> Model uydu</a>
-        |
-        <a href="mekanik.html"><img src="img/minik-arac.png" width="16" height="16" alt=""> Mekanik</a>
-        |
-        <a href="elektronik.html"><img src="img/minik-cip.png" width="16" height="16" alt=""> Elektronik</a>
-        |
-        <a href="yazilim.html"><img src="img/minik-cip.png" width="16" height="16" alt=""> Yazılım</a>
-        |
-        <a href="hedefler.html"><img src="img/minik-roket.png" width="16" height="16" alt=""> Projelerim ve hedeflerim</a>
-        |
-        <a href="haberler.html"><img src="img/minik-roket.png" width="16" height="16" alt=""> Uzay haberleri</a>
-        |
-        <a href="uyelik.html"><img src="img/minik-yildiz.png" width="16" height="16" alt=""> Üye kaydı</a>
+        <header>
+            <h2 class="site-adi">SpaceLog</h2>
+            <nav aria-label="Ana menü">
+                <ul>
+                    <li><a href="index.html"><img src="img/home.png" alt="" width="16" height="16"> Ana Sayfa</a></li>
+                    <li><a href="hakkimda.html"><img src="img/minik-yildiz.png" alt="" width="16" height="16"> Hakkımda</a></li>
+                    <li><a href="gunluk.html"><img src="img/minik-yildiz.png" alt="" width="16" height="16"> Günlük</a></li>
+                    <li><a href="uydu.html"><img src="img/minik-uydu.png" alt="" width="16" height="16"> Model Uydu</a></li>
+                    <li><a href="mekanik.html"><img src="img/minik-arac.png" alt="" width="16" height="16"> Mekanik</a></li>
+                    <li><a href="elektronik.html" class="aktif"><img src="img/minik-cip.png" alt="" width="16" height="16"> Elektronik</a></li>
+                    <li><a href="yazilim.html"><img src="img/minik-cip.png" alt="" width="16" height="16"> Yazılım</a></li>
+                    <li><a href="hedefler.html"><img src="img/minik-roket.png" alt="" width="16" height="16"> Hedeflerim</a></li>
+                    <li><a href="haberler.html"><img src="img/minik-roket.png" alt="" width="16" height="16"> Haberler</a></li>
+                    <li><a href="uyelik.html"><img src="img/minik-yildiz.png" alt="" width="16" height="16"> Üye Kaydı</a></li>
+                </ul>
+            </nav>
+        </header>
+
         <hr>
         <main>
         <h1>Elektronikte Neler Yaptım?</h1>
@@ -32,7 +32,8 @@
         <hr>
         <h2>Devre 1 dersi</h2>
         <p>Devre 1 dersinde temel devre analizine çalışıyorum. Gerilim, akım, direnç ve devre bağlantıları konusunda temelimi güçlendirmek istiyorum.</p>
-        <table>
+        <div class="tablo-kutu">
+<table>
             <tr>
                 <th>Konu</th>
                 <th>Üzerinde çalıştığım şey</th>
@@ -50,11 +51,33 @@
                 <td>Hesaplamaları doğru uygulamak</td>
             </tr>
         </table>
+        </div>
+        <hr>
+
+        <section>
+            <h2>LED ve direnç hesabı</h2>
+            <p>Bir LED'in üzerinden geçen akımı sınırlandırmak için seri direnç kullanılır. Örneğin 5 V besleme, yaklaşık 2 V LED gerilimi ve 10 mA hedef akım için hesaplanan direnç 300 ohmdur.</p>
+            <p><strong>Formül:</strong> R = (Vbesleme - VLED) / I</p>
+            <div class="tablo-kutu"><table>
+                <tr><th>Değer</th><th>Örnek</th></tr>
+                <tr><td>Besleme</td><td>5 V</td></tr>
+                <tr><td>LED gerilimi</td><td>2 V (örnek)</td></tr>
+                <tr><td>Hedef akım</td><td>10 mA</td></tr>
+                <tr><td>Direnç</td><td>300 Ω (hesaplanan)</td></tr>
+            </table></div>
+            <p><small>Bu değerler öğrenme amaçlıdır; gerçek devrede LED'in veri sayfası kontrol edilir.</small></p>
+        </section>
+        <hr>
+        <section>
+            <h2>KiCad ile PCB tasarımına giriş</h2>
+            <p>KiCad'de önce devre şeması çizilir, sonra komponentlere uygun footprint seçilerek PCB yerleşimi hazırlanır. Şimdilik şematik çizimi ve komponent yerleşimini öğreniyorum.</p>
+            <img src="img/minik-cip.png" width="64" alt="Elektronik bölüm simgesi">
+        </section>
         <hr>
         <h2>Elektronikte hedefim</h2>
         <p>Yalnızca hazır devreleri kullanmak değil, ileride kendi devrelerimi tasarlayabilmek ve PCB çalışmalarını anlayarak yapabilmek istiyorum.</p>
         <hr>
-        <p><strong>SpaceLog</strong> | Uzay, teknoloji ve mühendislik yolculuğum</p>
         </main>
+        <footer><p><strong>SpaceLog</strong> | Uzay, teknoloji ve mühendislik yolculuğum</p></footer>
     </body>
 </html>
