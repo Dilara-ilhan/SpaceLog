@@ -1,3 +1,4 @@
+/* Hafta 2 - CSS: Renkler, yazı ayarları ve kutu modeli */
 :root {
     --ana-renk: #14213D;
     --vurgu-renk: #FCA311;
@@ -31,7 +32,7 @@ a:hover {
     color: var(--vurgu-renk);
 }
 
-
+/* İçerik kutusu - slaytın kutu modeli uygulaması */
 main {
     max-width: 960px;
     margin: 24px auto;
@@ -79,9 +80,142 @@ input:focus, select:focus, textarea:focus {
     outline: 2px solid var(--vurgu-renk);
 }
 
-input[type="button"] {
+input[type="button"], input[type="submit"] {
     background-color: var(--vurgu-renk);
     color: var(--ana-renk);
     font-weight: bold;
     cursor: pointer;
+}
+
+/* Hafta 3 - Flexbox ile ortak üst menü */
+header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 12px 20px;
+    background-color: var(--ana-renk);
+    border-radius: 8px;
+}
+.site-adi { color: white; margin: 0; font-size: 1.4rem; }
+nav { margin-left: auto; }
+nav ul { display: flex; flex-wrap: wrap; gap: 5px; margin: 0; padding: 0; list-style: none; }
+nav a { display: block; padding: 6px 8px; border-radius: 5px; color: white; text-decoration: none; font-size: 0.88rem; }
+nav a:hover, nav a.aktif { background-color: var(--vurgu-renk); color: var(--ana-renk); }
+nav img { vertical-align: middle; }
+footer { text-align: center; font-size: 0.9rem; }
+
+/* Yeni eklenen küçük içerik bölümleri */
+.haber-kutu { display: flex; gap: 16px; align-items: flex-start; border-bottom: 1px solid var(--kenar); padding: 12px 0; }
+.haber-kutu img { flex-shrink: 0; }
+.haber-kutu h3 { margin-top: 0; }
+.calisma-kutulari { display: flex; gap: 12px; flex-wrap: wrap; }
+.calisma-kutu { flex: 1 1 190px; padding: 12px; border: 1px solid var(--kenar); border-radius: 8px; }
+.calisma-kutu h3 { margin: 4px 0; }
+.calisma-kutu p { margin: 8px 0; }
+.tablo-kutu { overflow-x: auto; }
+main img { max-width: 100%; height: auto; }
+
+/* Hafta 3 - Mobil görünüm (600 piksel ve altı) */
+@media (max-width: 600px) {
+    header { flex-direction: column; align-items: flex-start; padding: 12px; }
+    nav { margin-left: 0; }
+    nav ul { flex-wrap: wrap; }
+    main { margin: 12px 0; padding: 16px; }
+    .haber-kutu { flex-direction: column; }
+    input, select, textarea { max-width: 100%; }
+}
+
+
+/* Hafta 3 ek tasarımı: siyah delik temalı ana sayfa.
+   Diğer sayfaların içerikleri ve açık renkli ana kutuları korunur. */
+body { margin: 0; }
+header { border-radius: 0; }
+header .site-adi { white-space: nowrap; letter-spacing: -0.5px; }
+header nav ul { justify-content: flex-end; }
+header nav a { transition: background-color .2s, color .2s; }
+footer { padding: 10px 14px; }
+
+.ana-sayfa { background: #090a0e; color: #f3f3f3; }
+.ana-sayfa header {
+    background: #09090b;
+    border-bottom: 1px solid #343036;
+    padding: 16px 26px;
+    gap: 22px;
+}
+.ana-sayfa header .site-adi { font-size: 1.65rem; color: white; }
+.ana-sayfa nav a { color: #ededed; font-size: .87rem; padding: 7px 8px; }
+.ana-sayfa nav img { display: none; }
+.ana-sayfa nav a:hover, .ana-sayfa nav a.aktif {
+    color: #ffad4c;
+    background: #29201b;
+}
+.ana-kapak {
+    min-height: 660px;
+    padding: 120px 4% 34px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 90px;
+    background-image: linear-gradient(90deg, rgba(0,0,0,.84) 0%, rgba(0,0,0,.40) 50%, rgba(0,0,0,.04) 100%), url('../img/siyah-delik-arka-plan.jpg');
+    background-color: #000;
+    background-size: cover;
+    background-position: center;
+}
+.kapak-icerik { max-width: 710px; }
+.ust-etiket { color: #f2b97b; font-size: .82rem; font-weight: bold; letter-spacing: 2px; }
+.ana-kapak h1 { font-size: clamp(3.4rem, 8vw, 6rem); line-height: 1.05; margin: 15px 0 18px; color: white; }
+.kapak-aciklama { font-size: clamp(1.1rem, 2.1vw, 1.55rem); color: #e7e5e4; max-width: 650px; }
+.kapak-baglantilar { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 30px; }
+.kapak-buton { display: inline-block; border-radius: 9px; padding: 12px 22px; text-decoration: none; font-weight: bold; }
+.kapak-buton span { margin-left: 12px; }
+.kapak-buton.birincil { background: #ba722a; color: white; border: 1px solid #f5b264; }
+.kapak-buton.ikincil { background: rgba(0,0,0,.54); color: white; border: 1px solid #ae8b67; }
+.kapak-buton:hover { background: #f1aa55; color: #1b110b; }
+.kapak-kartlar { display: flex; gap: 16px; flex-wrap: wrap; }
+.kapak-kart {
+    flex: 1 1 255px; min-width: 0; display: flex; align-items: center; gap: 14px;
+    text-decoration: none; color: #fff; padding: 14px;
+    background: rgba(20,19,21,.88); border: 1px solid #5b5050;
+    border-radius: 15px;
+}
+.kapak-kart:hover { border-color: #efaa58; background: rgba(48,34,26,.94); color: white; }
+.kapak-kart img { width: 84px; height: 84px; flex-shrink: 0; object-fit: cover; border-radius: 10px; background: #171717; }
+.kapak-kart span:not(.kart-ok) { display: block; min-width: 0; }
+.kapak-kart strong { display: block; font-size: 1.05rem; line-height: 1.2; }
+.kapak-kart small { display: block; color: #c7c5c4; line-height: 1.35; margin-top: 8px; }
+.kapak-kart .kart-ok { margin-left: auto; color: #fcb35e; font-size: 1.6rem; }
+.ana-sayfa main { color: #1F2937; max-width: 1050px; margin: 32px auto; }
+.ana-sayfa footer { color: #bfbec4; }
+.ana-sayfa footer strong { color: #fff; }
+
+@media (max-width: 900px) {
+    .ana-sayfa header { flex-wrap: wrap; }
+    .ana-sayfa nav { margin-left: 0; }
+    .ana-sayfa nav ul { justify-content: flex-start; }
+    .ana-kapak { padding-top: 75px; gap: 60px; min-height: 570px; }
+}
+@media (max-width: 600px) {
+    .ana-sayfa header { padding: 14px; }
+    .ana-sayfa nav a { padding: 6px 7px; }
+    .ana-kapak { min-height: 0; padding: 60px 16px 24px; gap: 60px; background-position: 65% center; }
+    .ust-etiket { font-size: .7rem; letter-spacing: 1px; }
+    .kapak-kart { flex-basis: 100%; }
+    .kapak-kart img { width: 70px; height: 70px; }
+    .ana-sayfa main { margin: 14px 10px; padding: 16px; }
+}
+
+/* Hafta 3: Haber fotoğrafları ve kısa açıklamalar */
+.haber-listesi { display: flex; flex-direction: column; gap: 14px; margin: 22px 0; }
+.haber-karti { display: flex; gap: 18px; align-items: flex-start; padding: 16px; border: 1px solid var(--kenar); border-radius: 10px; background-color: #fbfcfe; }
+.haber-gorsel-baglanti { display: block; flex: 0 0 170px; }
+.haber-karti .haber-fotograf { width: 170px; height: 116px; max-width: 100%; border-radius: 8px; object-fit: cover; display: block; background: #e1e5ea; }
+.haber-metin { min-width: 0; }
+.haber-metin h2 { font-size: 1.08rem; line-height: 1.35; margin: 0 0 6px; }
+.haber-metin p { margin: 6px 0; }
+.haber-tarih { color: #566273; font-size: .86rem; font-weight: bold; }
+.haber-metin small { color: #657080; }
+@media (max-width: 600px) {
+    .haber-karti { flex-direction: column; padding: 13px; }
+    .haber-gorsel-baglanti { flex-basis: auto; width: 100%; }
+    .haber-karti .haber-fotograf { width: 100%; height: 160px; }
 }
