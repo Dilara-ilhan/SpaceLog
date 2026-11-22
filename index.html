@@ -1,123 +1,147 @@
 <!DOCTYPE html>
 <html lang="tr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>SpaceLog | Ana Sayfa</title>
-        <link rel="stylesheet" href="css/stil.css">
-    </head>
-    <body class="ana-sayfa">
-        <header>
-            <h2 class="site-adi">SpaceLog</h2>
-            <nav aria-label="Ana menü">
-                <ul>
-                    <li><a href="index.html" class="aktif"><img src="img/home.png" alt="" width="16" height="16"> Ana Sayfa</a></li>
-                    <li><a href="hakkimda.html"><img src="img/minik-yildiz.png" alt="" width="16" height="16"> Hakkımda</a></li>
-                    <li><a href="gunluk.html"><img src="img/minik-yildiz.png" alt="" width="16" height="16"> Günlük</a></li>
-                    <li><a href="uydu.html"><img src="img/minik-uydu.png" alt="" width="16" height="16"> Model Uydu</a></li>
-                    <li><a href="mekanik.html"><img src="img/minik-arac.png" alt="" width="16" height="16"> Mekanik</a></li>
-                    <li><a href="elektronik.html"><img src="img/minik-cip.png" alt="" width="16" height="16"> Elektronik</a></li>
-                    <li><a href="yazilim.html"><img src="img/minik-cip.png" alt="" width="16" height="16"> Yazılım</a></li>
-                    <li><a href="hedefler.html"><img src="img/minik-roket.png" alt="" width="16" height="16"> Hedeflerim</a></li>
-                    <li><a href="haberler.html"><img src="img/minik-roket.png" alt="" width="16" height="16"> Haberler</a></li>
-                    <li><a href="uyelik.html"><img src="img/minik-yildiz.png" alt="" width="16" height="16"> Üye Kaydı</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <section class="ana-kapak" aria-label="SpaceLog tanıtımı">
-            <div class="kapak-icerik">
-                <p class="ust-etiket">KİŞİSEL UZAY VE MÜHENDİSLİK GÜNLÜĞÜ</p>
-                <h1>SpaceLog</h1>
-                <p class="kapak-aciklama">Uzay, mühendislik, teknoloji ve öğrenme yolculuğum.</p>
-                <div class="kapak-baglantilar">
-                    <a class="kapak-buton birincil" href="hedefler.html">Projeleri Keşfet <span aria-hidden="true">→</span></a>
-                    <a class="kapak-buton ikincil" href="gunluk.html">Günlüğe Git <span aria-hidden="true">→</span></a>
-                </div>
-            </div>
-            <div class="kapak-kartlar">
-                <a class="kapak-kart" href="uydu.html">
-                    <img src="img/uydu-sistem-1.png" alt="Model uydu prototipim">
-                    <span><strong>Model Uydu</strong><small>Hidrosphere ve yarışma deneyimim</small></span>
-                    <span class="kart-ok" aria-hidden="true">→</span>
-                </a>
-                <a class="kapak-kart" href="haberler.html">
-                    <img src="img/uzay-mekigi-gorseli.jpg" alt="Uzay çalışmaları görseli">
-                    <span><strong>Uzay Haberleri</strong><small>NASA ve ESA'dan yeni gelişmeler</small></span>
-                    <span class="kart-ok" aria-hidden="true">→</span>
-                </a>
-                <a class="kapak-kart" href="elektronik.html">
-                    <img src="img/minik-cip.png" alt="Elektronik simgesi">
-                    <span><strong>Elektronik Günlüğüm</strong><small>LED, direnç ve KiCad notlarım</small></span>
-                    <span class="kart-ok" aria-hidden="true">→</span>
-                </a>
-            </div>
-        </section>
-
-        <main>
-        <h2>Merhaba, ben Dilara!</h2>
-        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Artemis_I_Launch_(NHQ202211160015).jpg?width=450" width="180" alt="NASA Artemis I roket firlatmasi">
-        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Artemis_I_Launch_(NHQ202211160021).jpg?width=450" width="180" alt="Artemis I firlatma fotografi">
-        <p><small>Fotoğraflar: NASA</small></p>
-        <hr>
-
-        <section>
-            <h2>Son Eklediklerim</h2>
-            <div class="calisma-kutulari">
-                <div class="calisma-kutu"><h3>Uzay Haberleri</h3><p>NASA ve ESA'dan yeni haberler ekledim.</p><p><a href="haberler.html">Haberlere git</a></p></div>
-                <div class="calisma-kutu"><h3>Elektronik</h3><p>LED-direnç hesabı ve KiCad notları.</p><p><a href="elektronik.html">Elektronik günlüğü</a></p></div>
-                <div class="calisma-kutu"><h3>Mekanik</h3><p>Bambu Lab ve SolidWorks çalışma notları.</p><p><a href="mekanik.html">Mekanik günlüğü</a></p></div>
-            </div>
-        </section>
-        <hr>
-        <h2>Ben kimim?</h2>
-        <p>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SpaceLog | Ana Sayfa</title>
+<link href="css/stil.css" rel="stylesheet"/>
+</head>
+<body class="ana-sayfa">
+<header>
+<h2 class="site-adi">SpaceLog</h2>
+<nav aria-label="Ana menü">
+<ul>
+<li><a class="aktif" href="index.html"><img alt="" height="16" src="img/home.png" width="16"/> Ana Sayfa</a></li>
+<li><a href="hakkimda.html"><img alt="" height="16" src="img/minik-yildiz.png" width="16"/> Hakkımda</a></li>
+<li><a href="gunluk.html"><img alt="" height="16" src="img/minik-yildiz.png" width="16"/> Günlük</a></li>
+<li><a href="uydu.html"><img alt="" height="16" src="img/minik-uydu.png" width="16"/> Model Uydu</a></li>
+<li><a href="mekanik.html"><img alt="" height="16" src="img/minik-arac.png" width="16"/> Mekanik</a></li>
+<li><a href="elektronik.html"><img alt="" height="16" src="img/minik-cip.png" width="16"/> Elektronik</a></li>
+<li><a href="yazilim.html"><img alt="" height="16" src="img/minik-cip.png" width="16"/> Yazılım</a></li>
+<li><a href="hedefler.html"><img alt="" height="16" src="img/minik-roket.png" width="16"/> Hedeflerim</a></li>
+<li><a href="haberler.html"><img alt="" height="16" src="img/minik-roket.png" width="16"/> Haberler</a></li>
+<li><a href="uyelik.html"><img alt="" height="16" src="img/minik-yildiz.png" width="16"/> Üye Kaydı</a></li>
+</ul>
+</nav>
+</header>
+<section aria-label="SpaceLog tanıtımı" class="ana-kapak">
+<div class="kapak-icerik">
+<p class="ust-etiket">KİŞİSEL UZAY VE MÜHENDİSLİK GÜNLÜĞÜ</p>
+<h1>SpaceLog</h1>
+<p class="kapak-aciklama">Uzay, mühendislik, teknoloji ve öğrenme yolculuğum.</p>
+<div class="kapak-baglantilar">
+<a class="kapak-buton birincil" href="hedefler.html">Projeleri Keşfet <span aria-hidden="true">→</span></a>
+<a class="kapak-buton ikincil" href="gunluk.html">Günlüğe Git <span aria-hidden="true">→</span></a>
+</div>
+</div>
+<div class="kapak-kartlar">
+<a class="kapak-kart" href="uydu.html">
+<img alt="Model uydu prototipim" src="img/uydu-sistem-1.png"/>
+<span><strong>Model Uydu</strong><small>Hidrosphere ve yarışma deneyimim</small></span>
+<span aria-hidden="true" class="kart-ok">→</span>
+</a>
+<a class="kapak-kart" href="haberler.html">
+<img alt="Uzay haberleri için roket fırlatışı görseli" src="img/ana-haber.jpg"/>
+<span><strong>Uzay Haberleri</strong><small>Uzaydan kısa haberler ve fotoğraflar</small></span>
+<span aria-hidden="true" class="kart-ok">→</span>
+</a>
+<a class="kapak-kart" href="elektronik.html">
+<img alt="Elektronik devre kartı görseli" src="img/ana-elektronik.jpg"/>
+<span><strong>Elektronik Günlüğüm</strong><small>LED, direnç ve KiCad notlarım</small></span>
+<span aria-hidden="true" class="kart-ok">→</span>
+</a>
+</div>
+</section>
+<!-- Hafta 4: JavaScript ile canlı geri sayım -->
+<section aria-labelledby="geri-sayim-baslik" class="geri-sayim">
+<div class="geri-sayim-icerik"><div class="sayac-ust-gorsel"><img alt="Fırlatma kulesindeki Starship roketi (Ariane 6 görevi için temsilî fotoğraf)" loading="lazy" src="img/haber-starship.jpg"/><span>ARIANE 6 · AMAZON LEO LE-04 · TEMSİLÎ FOTOĞRAF</span></div>
+<h2 id="geri-sayim-baslik">Roket Fırlatma Geri Sayımı</h2>
+<p><strong>Seçilen görev:</strong> Ariane 6 (VA271) — Amazon Leo LE-04. Arianespace, 36 uyduyu yörüngeye taşımayı planlıyor.</p>
+<p><strong>Planlanan fırlatma:</strong> 23 Kasım 2026, Türkiye saatiyle <strong>14.09–14.38</strong> (11.09–11.38 UTC). Geri sayım fırlatma penceresinin başlangıcına göre ayarlanmıştır. Fırlatma programı değişebilir. <a href="https://www.arianespace.com/news/mission-va271-launch-window-on-november-23-2026/" target="_blank" rel="noopener noreferrer">Resmî kaynak: Arianespace</a>.</p>
+<p>Sayfa açıldığında bu görevin geri sayımı başlar. Programlanan saat geçtikten sonra aşağıdaki <strong>Örnek Tarih Seç</strong> düğmesiyle bir saat sonrası için demo yapabilirsin.</p>
+<label for="firlatma-tarihi">Fırlatma tarihi ve saati (cihazının yerel saati):</label>
+<div class="geri-sayim-kontrol">
+<input id="firlatma-tarihi" type="datetime-local"/>
+<button id="ornek-tarih" type="button">Örnek Tarih Seç</button>
+<button id="sayaci-baslat" type="button">Geri Sayımı Başlat</button>
+<button id="sayaci-durdur" type="button">Durdur</button>
+<button id="sayaci-sifirla" type="button">Sıfırla</button>
+</div>
+<div aria-label="Fırlatmaya kalan süre" class="geri-sayim-degerler" role="timer">
+<div><strong id="gun">00</strong><span>Gün</span></div>
+<div><strong id="saat">00</strong><span>Saat</span></div>
+<div><strong id="dakika">00</strong><span>Dakika</span></div>
+<div><strong id="saniye">00</strong><span>Saniye</span></div>
+</div>
+<p aria-live="polite" id="sayac-mesaj">Ariane 6 görevinin geri sayımı yükleniyor...</p>
+</div>
+</section>
+<main>
+<h2>Merhaba, ben Dilara!</h2>
+<p>Uzay, elektronik, yazılım ve mühendislik çalışmalarımı; atölye deneyimlerimi ve öğrendiklerimi burada paylaşıyorum.</p>
+<hr/>
+<section class="yeni-hafta-bolumu"><div class="bolum-ust"><span class="bolum-kicker">ATÖLYEDEN VE PROJELERDEN</span><h2>Bu Hafta Neler Yaptım?</h2><p>Yeni deneyimlerimden kısa notlar ve fotoğraflar.</p></div><div class="mini-kartlar">
+<a class="mini-kart" href="gunluk.html"><img alt="Milli Teknoloji Atölyesinde öğrenciler" src="img/mta-atolye-calismasi.jpg"/><div><strong>Atölye Tanıtımı</strong><small>Gelen öğrencilere üretim alanlarını tanıttık.</small></div></a>
+<a class="mini-kart" href="mekanik.html"><img alt="Pembe 3B baskı parça" src="img/ilk-3b-baskim.jpg"/><div><strong>İlk 3B Baskım</strong><small>İlaç kırma aparatı denemem.</small></div></a>
+<a class="mini-kart" href="hedefler.html"><img alt="OpenRocket programında roket modeli" src="img/openrocket-denemem.jpg"/><div><strong>OpenRocket</strong><small>Roket tasarımıyla ilk denemelerim.</small></div></a>
+</div></section><section>
+<h2>Son Eklediklerim</h2>
+<div class="calisma-kutulari">
+<div class="calisma-kutu"><h3>Uzay Haberleri</h3><p>Uzay gündeminden seçtiğim beş yeni haber ekledim.</p><p><a href="haberler.html">Haberlere git</a></p></div>
+<div class="calisma-kutu"><h3>Elektronik</h3><p>LED, KiCad ve drone elektroniği notları.</p><p><a href="elektronik.html">Elektronik günlüğü</a></p></div>
+<div class="calisma-kutu"><h3>Mekanik</h3><p>3B baskı ve OpenRocket denemeleri.</p><p><a href="mekanik.html">Mekanik günlüğü</a></p></div>
+</div>
+</section>
+<hr/>
+<h2 class="profil-baslik">Ben kimim?</h2>
+<p class="profil-aciklama">
             Ankara Üniversitesinde bilgisayar mühendisliği okuyorum. Uzay teknolojileri, yazılım, elektronik ve mekanik alanlarına ilgi duyuyorum. TEKNOFEST Model Uydu Yarışması'na Hidrosphere takımıyla katıldım. CORE topluluğunda yönetim kurulu üyesiyim.
         </p>
-        <p><a href="hakkimda.html">Hakkımda daha fazlası</a> | <a href="gunluk.html">Kişisel günlüğüm</a></p>
-        <hr>
-        <h2>Bu yıl neler öğreniyorum?</h2>
-        <div class="tablo-kutu">
+<p><a href="hakkimda.html">Hakkımda daha fazlası</a> | <a href="gunluk.html">Kişisel günlüğüm</a></p>
+<hr/>
+<h2>Bu yıl neler öğreniyorum?</h2>
+<div class="tablo-kutu">
 <table>
-            <tr>
-                <th>Alan</th>
-                <th>Şu an üzerinde çalıştıklarım</th>
-                <th>Sayfa</th>
-            </tr>
-            <tr>
-                <td>Mekanik</td>
-                <td>Bambu Lab 3B baskı, SolidWorks'e başlangıç</td>
-                <td><a href="mekanik.html">Mekanik notları</a></td>
-            </tr>
-            <tr>
-                <td>Elektronik</td>
-                <td>Devre 1 dersi ve temel devreler</td>
-                <td><a href="elektronik.html">Elektronik notları</a></td>
-            </tr>
-            <tr>
-                <td>Yazılım</td>
-                <td>MTA projesinde kod geliştirme</td>
-                <td><a href="yazilim.html">Yazılım notları</a></td>
-            </tr>
-        </table>
-        </div>
-        <hr>
-        <h2>Bu seneki projelerim ve hedeflerim</h2>
-        <p>Model uydu tecrübesini yeni çalışmalara taşımak, öğrendiğim konuları uygulamak ve üretim süreçlerinde daha aktif olmak istiyorum.</p>
-        <p><a href="hedefler.html">Proje ve hedefler tablom</a></p>
-        <hr>
-        <h2>Dünyadan kısa kısa</h2>
-        <p>NASA ve ESA'dan seçtiğim kısa haberler için <a href="haberler.html">uzay haberleri sayfasına</a> göz at.</p>
-        <p>
+<tr>
+<th>Alan</th>
+<th>Şu an üzerinde çalıştıklarım</th>
+<th>Sayfa</th>
+</tr>
+<tr>
+<td>Mekanik</td>
+<td>Bambu Lab 3B baskı, SolidWorks'e başlangıç</td>
+<td><a href="mekanik.html">Mekanik notları</a></td>
+</tr>
+<tr>
+<td>Elektronik</td>
+<td>Devre 1 dersi ve temel devreler</td>
+<td><a href="elektronik.html">Elektronik notları</a></td>
+</tr>
+<tr>
+<td>Yazılım</td>
+<td>MTA projesinde kod geliştirme</td>
+<td><a href="yazilim.html">Yazılım notları</a></td>
+</tr>
+</table>
+</div>
+<hr/>
+<h2>Bu seneki projelerim ve hedeflerim</h2>
+<p>Model uydu tecrübesini yeni çalışmalara taşımak, öğrendiğim konuları uygulamak ve üretim süreçlerinde daha aktif olmak istiyorum.</p>
+<p><a href="hedefler.html">Proje ve hedefler tablom</a></p>
+<hr/>
+<h2>Dünyadan kısa kısa</h2>
+<p>Uzay gündeminden seçtiğim kısa haberler için <a href="haberler.html">uzay haberleri sayfasına</a> göz at.</p>
+<p>
             Resmî kaynaklar:
             <a href="https://www.nasa.gov/" target="_blank">NASA</a>
             |
             <a href="https://www.esa.int/" target="_blank">ESA</a>
             |
             <a href="https://www.space.com/" target="_blank">Space.com</a>
-        </p>
-        <hr>
-        </main>
-        <footer><p><strong>SpaceLog</strong> | Uzay, teknoloji ve mühendislik yolculuğum</p></footer>
-    </body>
+</p>
+<hr/>
+</main>
+<footer><p><strong>SpaceLog</strong> | Uzay, teknoloji ve mühendislik yolculuğum</p></footer>
+<script src="js/script.js"></script>
+</body>
 </html>

@@ -1,95 +1,94 @@
 <!DOCTYPE html>
 <html lang="tr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>SpaceLog | Üye Kaydı</title>
-        <link rel="stylesheet" href="css/stil.css">
-    </head>
-    <body>
-        <header>
-            <h2 class="site-adi">SpaceLog</h2>
-            <nav aria-label="Ana menü">
-                <ul>
-                    <li><a href="index.html"><img src="img/home.png" alt="" width="16" height="16"> Ana Sayfa</a></li>
-                    <li><a href="hakkimda.html"><img src="img/minik-yildiz.png" alt="" width="16" height="16"> Hakkımda</a></li>
-                    <li><a href="gunluk.html"><img src="img/minik-yildiz.png" alt="" width="16" height="16"> Günlük</a></li>
-                    <li><a href="uydu.html"><img src="img/minik-uydu.png" alt="" width="16" height="16"> Model Uydu</a></li>
-                    <li><a href="mekanik.html"><img src="img/minik-arac.png" alt="" width="16" height="16"> Mekanik</a></li>
-                    <li><a href="elektronik.html"><img src="img/minik-cip.png" alt="" width="16" height="16"> Elektronik</a></li>
-                    <li><a href="yazilim.html"><img src="img/minik-cip.png" alt="" width="16" height="16"> Yazılım</a></li>
-                    <li><a href="hedefler.html"><img src="img/minik-roket.png" alt="" width="16" height="16"> Hedeflerim</a></li>
-                    <li><a href="haberler.html"><img src="img/minik-roket.png" alt="" width="16" height="16"> Haberler</a></li>
-                    <li><a href="uyelik.html" class="aktif"><img src="img/minik-yildiz.png" alt="" width="16" height="16"> Üye Kaydı</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <hr>
-        <main>
-        <h1>SpaceLog Topluluğuna Katıl</h1>
-        <p>Uzay, elektronik ve yazılım konularına ilgin varsa bu örnek formu doldurabilirsin.</p>
-        <p><strong>Not:</strong> Formu doldurup Devam Et butonuna bastığında ana sayfaya dönersin. Bilgiler henüz kaydedilmez.</p>
-        <hr>
-        <form id="uyelik-formu">
-            <div class="tablo-kutu">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SpaceLog | Üye Kaydı</title>
+<link href="css/stil.css" rel="stylesheet"/>
+</head>
+<body class="ic-sayfa-koyu">
+<header>
+<h2 class="site-adi">SpaceLog</h2>
+<nav aria-label="Ana menü">
+<ul>
+<li><a href="index.html"><img alt="" height="16" src="img/home.png" width="16"/> Ana Sayfa</a></li>
+<li><a href="hakkimda.html"><img alt="" height="16" src="img/minik-yildiz.png" width="16"/> Hakkımda</a></li>
+<li><a href="gunluk.html"><img alt="" height="16" src="img/minik-yildiz.png" width="16"/> Günlük</a></li>
+<li><a href="uydu.html"><img alt="" height="16" src="img/minik-uydu.png" width="16"/> Model Uydu</a></li>
+<li><a href="mekanik.html"><img alt="" height="16" src="img/minik-arac.png" width="16"/> Mekanik</a></li>
+<li><a href="elektronik.html"><img alt="" height="16" src="img/minik-cip.png" width="16"/> Elektronik</a></li>
+<li><a href="yazilim.html"><img alt="" height="16" src="img/minik-cip.png" width="16"/> Yazılım</a></li>
+<li><a href="hedefler.html"><img alt="" height="16" src="img/minik-roket.png" width="16"/> Hedeflerim</a></li>
+<li><a href="haberler.html"><img alt="" height="16" src="img/minik-roket.png" width="16"/> Haberler</a></li>
+<li><a class="aktif" href="uyelik.html"><img alt="" height="16" src="img/minik-yildiz.png" width="16"/> Üye Kaydı</a></li>
+</ul>
+</nav>
+</header>
+<hr/>
+<main>
+<h1>SpaceLog Topluluğuna Katıl</h1>
+<p>Uzay, elektronik ve yazılım konularına ilgin varsa bu örnek formu doldurabilirsin.</p>
+<p><strong>Not:</strong> Formu doldurup Devam Et butonuna bastığında ana sayfaya dönersin. Bilgiler henüz kaydedilmez.</p>
+<hr/>
+<form id="uyelik-formu">
+<div class="tablo-kutu">
 <table>
-                <tr>
-                    <th>Bilgi</th>
-                    <th>Giriş</th>
-                </tr>
-                <tr>
-                    <td>Ad</td>
-                    <td><input type="text" name="ad" required></td>
-                </tr>
-                <tr>
-                    <td>Soyad</td>
-                    <td><input type="text" name="soyad" required></td>
-                </tr>
-                <tr>
-                    <td>E-posta</td>
-                    <td><input type="email" name="eposta" required></td>
-                </tr>
-                <tr>
-                    <td>Doğum tarihi</td>
-                    <td><input type="date" name="dogum" required></td>
-                </tr>
-                <tr>
-                    <td>İlgi alanı</td>
-                    <td><input type="checkbox" name="uzay"> Uzay <input type="checkbox" name="elektronik"> Elektronik <input type="checkbox" name="yazilim"> Yazılım</td>
-                </tr>
-                <tr>
-                    <td>En sevdiğin alan</td>
-                    <td>
-                        <select name="alan">
-                            <option>Uzay</option>
-                            <option>Elektronik</option>
-                            <option>Yazılım</option>
-                            <option>Mekanik</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Kısa mesaj</td>
-                    <td>
-                        <textarea name="mesaj" rows="3" cols="32"></textarea>
-                    </td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td><input type="submit" value="Devam Et"></td>
-                </tr>
-            </table>
-        </div>
-        </form>
-        <hr>
-        </main>
-        <footer><p><strong>SpaceLog</strong> | Uzay, teknoloji ve mühendislik yolculuğum</p></footer>
-        <script>
+<tr>
+<th>Bilgi</th>
+<th>Giriş</th>
+</tr>
+<tr>
+<td>Ad</td>
+<td><input name="ad" required="" type="text"/></td>
+</tr>
+<tr>
+<td>Soyad</td>
+<td><input name="soyad" required="" type="text"/></td>
+</tr>
+<tr>
+<td>E-posta</td>
+<td><input name="eposta" required="" type="email"/></td>
+</tr>
+<tr>
+<td>Doğum tarihi</td>
+<td><input name="dogum" required="" type="date"/></td>
+</tr>
+<tr>
+<td>İlgi alanı</td>
+<td><input name="uzay" type="checkbox"/> Uzay <input name="elektronik" type="checkbox"/> Elektronik <input name="yazilim" type="checkbox"/> Yazılım</td>
+</tr>
+<tr>
+<td>En sevdiğin alan</td>
+<td>
+<select name="alan">
+<option>Uzay</option>
+<option>Elektronik</option>
+<option>Yazılım</option>
+<option>Mekanik</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>Kısa mesaj</td>
+<td>
+<textarea cols="32" name="mesaj" rows="3"></textarea>
+</td>
+</tr>
+<tr>
+<td></td>
+<td><input type="submit" value="Devam Et"/></td>
+</tr>
+</table>
+</div>
+</form>
+<hr/>
+</main>
+<footer><p><strong>SpaceLog</strong> | Uzay, teknoloji ve mühendislik yolculuğum</p></footer>
+<script>
             document.getElementById("uyelik-formu").addEventListener("submit", function(olay) {
                 olay.preventDefault();
                 window.location.href = "index.html";
             });
         </script>
-    </body>
+</body>
 </html>

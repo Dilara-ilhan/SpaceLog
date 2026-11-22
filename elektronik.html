@@ -1,83 +1,92 @@
 <!DOCTYPE html>
+
 <html lang="tr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>SpaceLog | Elektronik Günlüğüm</title>
-        <link rel="stylesheet" href="css/stil.css">
-    </head>
-    <body>
-        <header>
-            <h2 class="site-adi">SpaceLog</h2>
-            <nav aria-label="Ana menü">
-                <ul>
-                    <li><a href="index.html"><img src="img/home.png" alt="" width="16" height="16"> Ana Sayfa</a></li>
-                    <li><a href="hakkimda.html"><img src="img/minik-yildiz.png" alt="" width="16" height="16"> Hakkımda</a></li>
-                    <li><a href="gunluk.html"><img src="img/minik-yildiz.png" alt="" width="16" height="16"> Günlük</a></li>
-                    <li><a href="uydu.html"><img src="img/minik-uydu.png" alt="" width="16" height="16"> Model Uydu</a></li>
-                    <li><a href="mekanik.html"><img src="img/minik-arac.png" alt="" width="16" height="16"> Mekanik</a></li>
-                    <li><a href="elektronik.html" class="aktif"><img src="img/minik-cip.png" alt="" width="16" height="16"> Elektronik</a></li>
-                    <li><a href="yazilim.html"><img src="img/minik-cip.png" alt="" width="16" height="16"> Yazılım</a></li>
-                    <li><a href="hedefler.html"><img src="img/minik-roket.png" alt="" width="16" height="16"> Hedeflerim</a></li>
-                    <li><a href="haberler.html"><img src="img/minik-roket.png" alt="" width="16" height="16"> Haberler</a></li>
-                    <li><a href="uyelik.html"><img src="img/minik-yildiz.png" alt="" width="16" height="16"> Üye Kaydı</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <hr>
-        <main>
-        <h1>Elektronikte Neler Yaptım?</h1>
-        <p>Elektronik öğrenirken formüllerin yanında devrelerin neden çalıştığını anlamaya odaklanıyorum.</p>
-        <hr>
-        <h2>Devre 1 dersi</h2>
-        <p>Devre 1 dersinde temel devre analizine çalışıyorum. Gerilim, akım, direnç ve devre bağlantıları konusunda temelimi güçlendirmek istiyorum.</p>
-        <div class="tablo-kutu">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SpaceLog | Elektronik Günlüğüm</title>
+<link href="css/stil.css" rel="stylesheet"/>
+</head>
+<body class="ic-sayfa-koyu">
+<header>
+<h2 class="site-adi">SpaceLog</h2>
+<nav aria-label="Ana menü">
+<ul>
+<li><a href="index.html"><img alt="" height="16" src="img/home.png" width="16"/> Ana Sayfa</a></li>
+<li><a href="hakkimda.html"><img alt="" height="16" src="img/minik-yildiz.png" width="16"/> Hakkımda</a></li>
+<li><a href="gunluk.html"><img alt="" height="16" src="img/minik-yildiz.png" width="16"/> Günlük</a></li>
+<li><a href="uydu.html"><img alt="" height="16" src="img/minik-uydu.png" width="16"/> Model Uydu</a></li>
+<li><a href="mekanik.html"><img alt="" height="16" src="img/minik-arac.png" width="16"/> Mekanik</a></li>
+<li><a class="aktif" href="elektronik.html"><img alt="" height="16" src="img/minik-cip.png" width="16"/> Elektronik</a></li>
+<li><a href="yazilim.html"><img alt="" height="16" src="img/minik-cip.png" width="16"/> Yazılım</a></li>
+<li><a href="hedefler.html"><img alt="" height="16" src="img/minik-roket.png" width="16"/> Hedeflerim</a></li>
+<li><a href="haberler.html"><img alt="" height="16" src="img/minik-roket.png" width="16"/> Haberler</a></li>
+<li><a href="uyelik.html"><img alt="" height="16" src="img/minik-yildiz.png" width="16"/> Üye Kaydı</a></li>
+</ul>
+</nav>
+</header>
+<hr/>
+<main>
+<h1>Elektronikte Neler Yaptım?</h1>
+<p>Elektronik öğrenirken formüllerin yanında devrelerin neden çalıştığını anlamaya odaklanıyorum.</p>
+<hr/>
+<h2>Devre 1 dersi</h2>
+<p>Devre 1 dersinde temel devre analizine çalışıyorum. Gerilim, akım, direnç ve devre bağlantıları konusunda temelimi güçlendirmek istiyorum.</p>
+<div class="tablo-kutu">
 <table>
-            <tr>
-                <th>Konu</th>
-                <th>Üzerinde çalıştığım şey</th>
-            </tr>
-            <tr>
-                <td>Ohm kanunu</td>
-                <td>Gerilim, akım ve direnç ilişkisi</td>
-            </tr>
-            <tr>
-                <td>Seri / paralel devre</td>
-                <td>Devre yapısını okumak</td>
-            </tr>
-            <tr>
-                <td>Devre analizi</td>
-                <td>Hesaplamaları doğru uygulamak</td>
-            </tr>
-        </table>
-        </div>
-        <hr>
-
-        <section>
-            <h2>LED ve direnç hesabı</h2>
-            <p>Bir LED'in üzerinden geçen akımı sınırlandırmak için seri direnç kullanılır. Örneğin 5 V besleme, yaklaşık 2 V LED gerilimi ve 10 mA hedef akım için hesaplanan direnç 300 ohmdur.</p>
-            <p><strong>Formül:</strong> R = (Vbesleme - VLED) / I</p>
-            <div class="tablo-kutu"><table>
-                <tr><th>Değer</th><th>Örnek</th></tr>
-                <tr><td>Besleme</td><td>5 V</td></tr>
-                <tr><td>LED gerilimi</td><td>2 V (örnek)</td></tr>
-                <tr><td>Hedef akım</td><td>10 mA</td></tr>
-                <tr><td>Direnç</td><td>300 Ω (hesaplanan)</td></tr>
-            </table></div>
-            <p><small>Bu değerler öğrenme amaçlıdır; gerçek devrede LED'in veri sayfası kontrol edilir.</small></p>
-        </section>
-        <hr>
-        <section>
-            <h2>KiCad ile PCB tasarımına giriş</h2>
-            <p>KiCad'de önce devre şeması çizilir, sonra komponentlere uygun footprint seçilerek PCB yerleşimi hazırlanır. Şimdilik şematik çizimi ve komponent yerleşimini öğreniyorum.</p>
-            <img src="img/minik-cip.png" width="64" alt="Elektronik bölüm simgesi">
-        </section>
-        <hr>
-        <h2>Elektronikte hedefim</h2>
-        <p>Yalnızca hazır devreleri kullanmak değil, ileride kendi devrelerimi tasarlayabilmek ve PCB çalışmalarını anlayarak yapabilmek istiyorum.</p>
-        <hr>
-        </main>
-        <footer><p><strong>SpaceLog</strong> | Uzay, teknoloji ve mühendislik yolculuğum</p></footer>
-    </body>
+<tr>
+<th>Konu</th>
+<th>Üzerinde çalıştığım şey</th>
+</tr>
+<tr>
+<td>Ohm kanunu</td>
+<td>Gerilim, akım ve direnç ilişkisi</td>
+</tr>
+<tr>
+<td>Seri / paralel devre</td>
+<td>Devre yapısını okumak</td>
+</tr>
+<tr>
+<td>Devre analizi</td>
+<td>Hesaplamaları doğru uygulamak</td>
+</tr>
+</table>
+</div>
+<hr/>
+<section>
+<h2>LED ve direnç hesabı</h2>
+<p>Bir LED'in üzerinden geçen akımı sınırlandırmak için seri direnç kullanılır. Örneğin 5 V besleme, yaklaşık 2 V LED gerilimi ve 10 mA hedef akım için hesaplanan direnç 300 ohmdur.</p>
+<p><strong>Formül:</strong> R = (Vbesleme - VLED) / I</p>
+<div class="tablo-kutu"><table>
+<tr><th>Değer</th><th>Örnek</th></tr>
+<tr><td>Besleme</td><td>5 V</td></tr>
+<tr><td>LED gerilimi</td><td>2 V (örnek)</td></tr>
+<tr><td>Hedef akım</td><td>10 mA</td></tr>
+<tr><td>Direnç</td><td>300 Ω (hesaplanan)</td></tr>
+</table></div>
+<p><small>Bu değerler öğrenme amaçlıdır; gerçek devrede LED'in veri sayfası kontrol edilir.</small></p>
+</section>
+<hr/>
+<section>
+<h2>KiCad ile PCB tasarımına giriş</h2>
+<p>KiCad'de önce devre şeması çizilir, sonra komponentlere uygun footprint seçilerek PCB yerleşimi hazırlanır. Şimdilik şematik çizimi ve komponent yerleşimini öğreniyorum.</p>
+<img alt="Elektronik bölüm simgesi" src="img/minik-cip.png" width="64"/>
+</section><article class="resimli-blok"><img alt="Elektronik devre kartı temsili görsel" loading="lazy" src="img/ana-elektronik.jpg"/><div><span class="bolum-kicker">ELEKTRONİK</span><h3>Devre Tasarımına İlgi</h3><p>Devre elemanlarını, bileşenlerin yerleşimini ve PCB üzerindeki bağlantıları öğreniyorum. Bu görsel temsili; kendi PCB tasarımımın fotoğrafı değil.</p></div></article>
+<hr/>
+<section class="drone-elektronik">
+<h2>Drone Elektroniği ve Montaj Çalışmamız</h2>
+<article class="resimli-blok">
+<img alt="Elektronik bağlantıları ve motorları üzerinde çalıştığımız dört motorlu drone" loading="lazy" src="img/drone-prototip.jpg"/>
+<div>
+<span class="bolum-kicker">DRONE SİSTEMLERİ</span>
+<h3>Drone Elektroniği ve Kablolama</h3>
+<p>Haftalardır üzerinde çalıştığımız drone sisteminde motor bağlantılarını, güç hattını ve kablo düzenini inceliyoruz. Elektronik parçaların doğru yerleştirilmesini ve montaj sırasında dikkat edilmesi gerekenleri öğreniyorum.</p>
+</div>
+</article>
+</section><hr/><h2>Elektronikte hedefim</h2>
+<p>Yalnızca hazır devreleri kullanmak değil, ileride kendi devrelerimi tasarlayabilmek ve PCB çalışmalarını anlayarak yapabilmek istiyorum.</p>
+<hr/>
+</main>
+<footer><p><strong>SpaceLog</strong> | Uzay, teknoloji ve mühendislik yolculuğum</p></footer>
+</body>
 </html>
