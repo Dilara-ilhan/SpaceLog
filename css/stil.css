@@ -219,3 +219,116 @@ footer { padding: 10px 14px; }
     .haber-gorsel-baglanti { flex-basis: auto; width: 100%; }
     .haber-karti .haber-fotograf { width: 100%; height: 160px; }
 }
+
+/* Hafta 4 - Canlı geri sayım ve mobil görünüm kontrolü */
+.geri-sayim { padding: 26px 16px; background: #111116; color: #f6f2ee; }
+.geri-sayim-icerik { max-width: 960px; margin: 0 auto; }
+.geri-sayim h2 { color: #fff; margin: 8px 0; }
+.geri-sayim-ust { color: #ffb365; font-size: .8rem; font-weight: bold; letter-spacing: 1px; }
+.geri-sayim label { display: block; margin: 18px 0 8px; }
+.geri-sayim-kontrol { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.geri-sayim input { max-width: 100%; color: #111; background: #fff; }
+.geri-sayim button { padding: 9px 13px; border: 1px solid #e9ab64; border-radius: 6px; background: #ba722a; color: #fff; cursor: pointer; }
+.geri-sayim button:hover { background: #db8b37; }
+.geri-sayim-degerler { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 20px; }
+.geri-sayim-degerler div { flex: 1 1 95px; text-align: center; border: 1px solid #57483e; border-radius: 8px; padding: 14px 8px; background: #211c1b; }
+.geri-sayim-degerler strong { display: block; font-size: clamp(1.6rem, 4vw, 2.4rem); color: #ffb365; }
+.geri-sayim-degerler span { font-size: .85rem; }
+#sayac-mesaj { min-height: 24px; color: #e9dbcf; }
+@media (max-width: 600px) {
+    .geri-sayim { padding: 22px 12px; }
+    .geri-sayim-kontrol input, .geri-sayim-kontrol button { width: 100%; }
+    .geri-sayim-degerler { gap: 8px; }
+    .geri-sayim-degerler div { flex-basis: 42%; }
+}
+
+/* Hafta 4: ikincil sayaç butonları */
+#ornek-tarih, #sayaci-durdur, #sayaci-sifirla {
+    background-color: transparent;
+    color: #f5d4b4;
+}
+#ornek-tarih:hover, #sayaci-durdur:hover, #sayaci-sifirla:hover {
+    background-color: #40302a;
+}
+
+/* Hafta 4 - Koyu içerik sayfaları ve fotoğraflı çalışma blokları */
+.ic-sayfa-koyu {background:#0b0d13;color:#e7e9f0;}
+.ic-sayfa-koyu header {background:#101522;border-bottom:1px solid #2c3444;}
+.ic-sayfa-koyu main {background:#151b28;color:#e7e9f0;border-color:#354055;max-width:1080px;}
+.ic-sayfa-koyu h1,.ic-sayfa-koyu h2,.ic-sayfa-koyu h3 {color:#f7f8fc;}
+.ic-sayfa-koyu main a {color:#ffb968;}
+.ic-sayfa-koyu main a:hover {color:#fdd9a6;}
+.ic-sayfa-koyu main hr {border:0;border-top:1px solid #344055;margin:24px 0;}
+.ic-sayfa-koyu main th {background:#253550;}
+.ic-sayfa-koyu main tr:nth-child(odd) {background:#202a3b;}
+.ic-sayfa-koyu main td {border-bottom-color:#39445a;}
+.ic-sayfa-koyu .calisma-kutu {background:#202a3b;border-color:#3b4760;}
+.ic-sayfa-koyu input,.ic-sayfa-koyu select,.ic-sayfa-koyu textarea {background:#f8f9fc;color:#182134;}
+.resimli-blok {display:flex;align-items:stretch;gap:24px;background:#202a3b;border:1px solid #384961;border-radius:16px;overflow:hidden;margin:18px 0;}
+.resimli-blok>img {width:40%;max-width:380px;min-height:190px;object-fit:cover;flex-shrink:0;}
+.resimli-blok>div {padding:20px 20px 20px 0;flex:1;}
+.resimli-blok h3 {margin:10px 0 8px;}
+.resimli-blok p {margin:0;line-height:1.65;}
+.bolum-kicker {font-size:.75rem;font-weight:bold;color:#ffbd76;letter-spacing:1.2px;}
+.icerik-panel {padding:22px;margin:20px 0;border:1px solid #40506a;background:#222d42;border-radius:14px;}
+.uydu-hero {min-height:255px;border-radius:16px;overflow:hidden;display:flex;background:#101621;margin:0 0 24px;align-items:center;}
+.uydu-hero img {width:43%;height:255px;object-fit:cover;}
+.uydu-hero>div {padding:20px 25px;}
+.uydu-hero h2 {font-size:1.7rem;margin:8px 0;}
+#uydu-begen,.haber-detay-buton {background:#f0a449;color:#121826;border:0;border-radius:9px;padding:10px 16px;font:inherit;cursor:pointer;font-weight:bold;}
+#uydu-begeni-sayisi {margin-left:10px;font-weight:bold;}
+/* Haberler: solda fotoğraf, sağda kısa yazı, butonla açılan detay */
+.haber-yeni-listesi {gap:18px;}
+.haber-yeni-kart {background:#202a3b;border:1px solid #3f4a60;border-radius:16px;padding:0;overflow:hidden;align-items:stretch;gap:0;}
+.haber-yeni-kart>.haber-fotograf {width:36%;max-width:360px;height:240px;max-height:none;object-fit:cover;border-radius:0;flex-shrink:0;}
+.haber-yeni-kart>.haber-metin {flex:1;padding:20px 24px;}
+.haber-kategori {font-size:.75rem;color:#ffbd76;font-weight:700;letter-spacing:.8px;}
+.haber-yeni-kart h2 {margin:9px 0 10px;color:#fff;font-size:1.25rem;}
+.haber-yeni-kart p {color:#d6ddea;line-height:1.65;}
+.haber-detay {margin-top:12px;padding-top:12px;border-top:1px solid #44516a;}
+.haber-detay[hidden] {display:none;}
+.haber-detay a {color:#ffb968;}
+.haber-detay small {color:#adb8c9;}
+.haber-detay-buton {margin-top:10px;}
+/* Ana sayfa: yeni içerik kartları */
+.yeni-hafta-bolumu {padding:18px 0 25px;}
+.bolum-ust>h2 {margin:6px 0 8px;}
+.mini-kartlar {display:flex;gap:16px;flex-wrap:wrap;margin-top:16px;}
+.mini-kart {flex:1 1 230px;min-width:0;display:block;background:#f5f6f9;border-radius:13px;overflow:hidden;text-decoration:none;border:1px solid #d9dee7;}
+.mini-kart img {width:100%;height:160px;object-fit:cover;display:block;}
+.mini-kart div {padding:13px 16px;}
+.mini-kart strong {display:block;color:#19253a;font-size:1rem;}
+.mini-kart small {display:block;color:#4d5968;margin-top:5px;}
+.ana-sayfa .profil-baslik {font-size:1.7rem;}
+.ana-sayfa .profil-aciklama {font-size:1.06rem;max-width:760px;line-height:1.8;border-left:4px solid #df9b49;padding-left:17px;}
+.sayac-ust-gorsel {position:relative;height:155px;overflow:hidden;border-radius:14px;margin-bottom:22px;}
+.sayac-ust-gorsel img {width:100%;height:100%;object-fit:cover;object-position:50% 43%;filter:brightness(.7);}
+.sayac-ust-gorsel span {position:absolute;bottom:12px;left:15px;color:#fff;font-size:.82rem;font-weight:bold;letter-spacing:1px;}
+@media (max-width:700px){
+ .resimli-blok,.uydu-hero,.haber-yeni-kart {flex-direction:column;}
+ .resimli-blok>img,.uydu-hero img,.haber-yeni-kart>.haber-fotograf {width:100%;max-width:none;height:215px;min-height:0;}
+ .resimli-blok>div,.uydu-hero>div {padding:16px;}
+ .haber-yeni-kart>.haber-metin {padding:16px;}
+ .mini-kart {flex-basis:100%;}
+ .ana-sayfa .ana-kapak {background-position:66% center;}
+}
+
+
+/* Hafta 4 - Kişisel Günlük: bütün anılar fotoğraf solda, yazı sağda kartlar */
+.gunluk-ana .gunluk-giris {margin-bottom:24px;}
+.gunluk-ana .yeni-gunlukler {margin:30px 0 42px;}
+.gunluk-ana .yeni-gunlukler>h2 {margin:0 0 6px;}
+.gunluk-ana .yeni-gunlukler>p {margin:0 0 18px;color:#c3ccd8;}
+.gunluk-ana .gunluk-karti {margin:16px 0;}
+.gunluk-ana .gunluk-karti>img {height:250px;min-height:250px;object-fit:cover;object-position:center 35%;}
+.gunluk-ana .gunluk-karti-metin {align-self:center;}
+.gunluk-ana .gunluk-karti h3 {font-size:1.17rem;line-height:1.3;}
+.gunluk-ana .gunluk-ek-fotograf {display:block;margin-top:14px;width:180px;max-width:100%;height:auto;border-radius:9px;}
+.gunluk-ana .gunluk-alt-baglanti {margin:30px 0 8px;}
+@media (max-width:700px) {
+  .gunluk-ana .gunluk-karti>img {width:100%;height:230px;min-height:0;max-width:none;object-position:center 30%;}
+  .gunluk-ana .gunluk-karti-metin {align-self:stretch;}
+}
+
+/* Son küçük düzenleme: 2. günlük fotoğraf hizası */
+.gunluk-odak-foto { object-position: center 24%; }
