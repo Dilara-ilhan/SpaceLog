@@ -18,5 +18,4 @@ Web sitesi tarayıcıda açılacaktır.
 
 - HTML
 - CSS
-
-JavaScript de eklenecektir derste gördükçe.
+- JavaScript
